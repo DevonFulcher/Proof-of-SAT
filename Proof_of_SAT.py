@@ -3,7 +3,7 @@
 Methods to generate and solve random instances of SAT and instances of SAT that are deterministically and pseudo-randomly
 generated from the solutions of previous MAX-SAT instances. This is a prototype of how a proof of work algorithm can be
 derived from a relevant problem.
-https://github.com/DevonFulcher/Proof_of_SAT
+https://github.com/DevonFulcher/Proof-of-SAT
 @author: Devon Fulcher
 """
 from hashlib import sha256
