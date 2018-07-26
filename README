@@ -2,11 +2,11 @@ Proof of work algorithms, like the one used in Bitcoin, require lots of energy t
 Proof of SAT is a protype blockchain consensus algorithm that is no more energy efficient than proof of work but provides somewhat
 useful information as a byproduct of the consensus that it provides. Being a prototype means that many features that would actually
 make it an effective blockchain consensus algorithm are missing such as a timestamp and a solution verifier. In proof of SAT, the
-cryptographic puzzle problem that is used in proof of work is replaced by approximating the maximum satisfiability problem, a 
-problem that has long intrigued computer scientists. The instances of the maximum satisfiability problem in proof of SAT are
-deterministically and pseudorandomly generated from the solutions of previous instances of the maximum satisfiability problem, as
-is similarly done in proof of work. These instances being pseudorandom somewhat hamper the usefulness of the solution. Although
-given enough solutions, statistical analysis could be performed to gain insight in satisfiability solving. This algorithm
+cryptographic puzzle problem that is used in proof of work is replaced by approximating the maximum satisfiability problem 
+(MAX-SAT), a problem that has long intrigued computer scientists. The instances of the maximum satisfiability problem in proof of
+SAT are deterministically and pseudorandomly generated from the solutions of previous instances of the maximum satisfiability
+problem, as is similarly done in proof of work. These instances being pseudorandom somewhat hamper the usefulness of the solution.
+Although given enough solutions, statistical analysis could be performed to gain insight in satisfiability solving. This algorithm
 incorporates the maximum satisfiability problem but this selection was done somewhat arbitrarily. There are many computational
 problems that would be ideal as a blockchain consensus algorithm and may provide more useful statistics than the proof of SAT
 algorithm. MAX-SAT being an NP-complete problem means that it can be reduced to any other NP-complete problem whichs opens the door
@@ -15,5 +15,5 @@ effectively. Furthermore, any problem that can be solved or approximated within 
 ability to have an instance be generated pseudorandomly and deterministically to be elgible to be created into a blockchain
 consensus algorithm. This process is performed within the solution_to_sat method in proof of SAT in such a way that could be easily
 generalized to other problems. However, an effective blockchain consensus algorithm will have other features as well such as being
-hard to solve and easy to verify, having adjustable difficulty, and having a predictable solve time. Hopefully, proof of SAT is an
-effective model of what is possible with blockchain consensus algorithms.
+hard to solve and easy to verify, having adjustable difficulty, and having a predictable solve time. Hopefully, proof of SAT serves
+as an effective model of what is possible with blockchain consensus algorithms.
