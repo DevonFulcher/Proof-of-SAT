@@ -1,5 +1,4 @@
-Proof of work algorithms, like the one used in Bitcoin, require lots of energy to run and provide no benefit other than consensus.
-Proof of SAT is a protype blockchain consensus algorithm that is no more energy efficient than proof of work but provides somewhat
+Proof of work algorithms, like the one used in Bitcoin, require lots of energy to run and provide no benefit other than consensus. Proof of SAT is a protype blockchain consensus algorithm that is no more energy efficient than proof of work but provides somewhat
 useful information as a byproduct of the consensus that it provides. Being a prototype means that many features that would actually
 make it an effective blockchain consensus algorithm are missing such as a timestamp and a solution verifier. In proof of SAT, the
 cryptographic puzzle problem that is used in proof of work is replaced by approximating the maximum satisfiability problem 
